@@ -2,4 +2,5 @@
 
 FROM jupyter/scipy-notebook:85f615d5cafa
 
-RUN apt-get install r-base r-base-dev -y
+RUN pip install \
+    "mglearn==0.1.9" 
